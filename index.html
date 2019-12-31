@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <meta charset="utf-8">
+  <title>MariInvests | A Marianopolis Club</title>
+  <meta name="description" content="The Marianopolis Investment Club is Marianopolis' premier destination for young investors. Meetings during AP on Tuesday's."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection">
+  <script type="text/javascript" src="scripts/jquery-3.1.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+  <script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		horizontalAlign: "left"
+	},
+	data: [{
+		type: "doughnut",
+		startAngle: 60,
+		//innerRadius: 60,
+		indexLabelFontSize: 17,
+		indexLabel: "{label} - #percent%",
+		toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+		dataPoints: [
+			{ y: 100, label: "Cash" },
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function(){
+$('.slider').slider();
+});
+  </script>
+  <script>
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+  </script>
+  <script>
+    $(document).ready(function( ){
+      $('.sidenav').sidenav()
+        });
+  </script>
+  <script>
+    $('.button-collapse').sideNav({
+      edge: 'right',
+      closeOnClick: true
+    })
+    </script>
+
+  <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'IBM Plex Sans';
+
+
+  }
+  .nav-extended {
+    background-color: #000000;
+  }
+  .dropdown-button {
+    width : 200px;
+  }
+
+  /* Or use #000000 for darker red matching selection */
+  .dropdown-content {
+    background-color: #000000;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("images/top_background.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* #header-logo {
+    margin: 15px
+  } */
+  nav {
+    height: 100px;
+    line-height: 50px;
+  }
+  .btn{
+    background-color: #202020
+  }
+  .btn:hover {
+    background-color: #474747
+  }
+  .image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-footer {
+        background-color: #202020;
+  }
+  .background-color {
+    background-color: #ffffff
+  }
+  .modal
+  {
+    height: 750px !important;
+
+    }  /* increase the height and width as you desire */
+
+  @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  .top_container {
+    width: 100%;
+    background-color: #202020;
+    margin: 0 auto;
+    height: 35px;
+    position: relative;
+  }
+  ul > li > a:hover {
+    border-bottom: 2px solid #202020;
+    text-decoration: none;
+}
+  </style>
+</head>
+<body class="background-color">
+  <div class="bg parallax-container">
+    <nav class="transparent z-depth-0" style="padding:0px 10px;">
+      <div class="nav-wrapper">
+        <div class="nav-extended">
+          <a id="header-logo" class="brand-logo left" style="color:#202020" href="index">MariInvests</a>
+          <ul id="slide-out" class="sidenav">
+              <li><a href="#about">About</a></li>
+              <li><a href="#leadership">Leadership</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#groups">Research Groups</a></li>
+              <li><a href="#join">Join</a></li>
+
+
+            </ul>
+          <a href="#" data-target="slide-out" class="right sidenav-trigger" style="color:#202020"><i class="material-icons">menu</i></a>
+          <!-- <a href="http://www.vertexinvestmentclub.com"> -->
+
+        <div class="content">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#about"><font color="#202020" style="font-size:100%"><b>About</b></font></a></li>
+          <li><a href="#leadership"><font color="#202020" style="font-size:100%"><b>Leadership</b></font></a></li>
+          <li><a href="#portfolio"><font color="#202020" style="font-size:100%"><b>Portfolio</b></font></a></li>
+          <li><a href="#groups"><font color="#202020" style="font-size:100%"><b>Research Groups</b></font></a></li>
+          <!-- <li><a href="#resources"><font color="#202020" style="font-size:100%"><b>Resources</b></font></a></li> -->
+          <li><a href="#join"><font color="#202020" style="font-size:100%"><b>Join</b></font></a></li>
+          </ul>
+          <script>
+          $(".dropdown-trigger").dropdown();
+          </script>
+        </div>
+      </div>
+      </div>
+  </nav>
+  <ul id="slide-out" class="sidenav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#groups">Research Groups</a></li>
+      <!-- <li><a href="resources">Resources</a></li> -->
+      <li><a href="#join">Join</a></li>
+    </ul>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col s1">
+    </div>
+    <div class="s11">
+      <h1 align="left"><font color="#202020"><b>Marianopolis Investment Club</b></font></h1>
+    </div>
+    <div class="col s1">
+    </div>
+    <div class="s11">
+      <h5 align="left"><font color="#202020">A Club for young investors of Marianopolis College, founded in 2020.</font></h5>
+    </div>
+    <br>
+    <div class="col s1">
+    </div>
+    <div class="s11">
+      <a class="waves-effect waves-light btn" href="#join">Join The Club</a>
+    </div>
+</div>
+</div>
+<div id="about" class="section white">
+  <div class="row container">
+    <div class="col s12 l6 xl6">
+    <h2 class="header">About the Club: Goals & Facts</h2>
+  </div>
+  <div class="col s12 l6 xl6">
+  </div>
+  <div class="col s12">
+    <p class="grey-text text-darken-3 lighten-3" align="justify">The Club was founded by Philip Becker, Charles Fr&eacute;dette and Noah Serhan in early 2020. Since then, the Club plans to meet once a week, during Activity Period at Marianopolis, to discuss investment opportunities, learn different investment strategies with lessons, seminars and conferences from industry professionals, as well as creating networking with business professionals.</p>
+  </div>
+  <br>
+  <div class="col s12 l4 xl4">
+    <img class="image-center" height="100px" src="images/passive.png">
+    <h5 align="center">Profitable Opportunities</font></h5>
+    <p align="center">Give members the chance to invest their own money to create passive income and allow them to save money for the future such as paying back college loans.</font></p>
+  </div>
+  <div class="col s12 l4 xl4">
+    <img class="image-center" height="100px" src="images/community.png">
+    <h5 align="center">Investing as a Group</font></h5>
+    <p align="center">Learning how to invest as a group to help develop key skills such as communication and critical thinking useful in both academic and career related activities.</font></p>
+  </div>
+  <div class="col s12 l4 xl4">
+    <img class="image-center" height="100px" src="images/career.png">
+    <h5 align="center">Networking Opportunities</font></h5>
+    <p align="center">Our numerous activities organized throughout the year will create networking opportunities for our members to connect with leaders from around the world.</font></p>
+  </div>
+</div>
+</div>
+<div class="parallax-container">
+    <div class="parallax"><img src="images/marianopolis.jpg"></div>
+    </div>
+    <div id="leadership"  class="section white">
+      <div class="row container">
+        <div class="row">
+        <div class="col s6">
+        <h2 class="header">Leadership: Executive Team</h2>
+      </div>
+      <div class="col s6">
+      </div>
+      </div>
+      <div class="row">
+        <div class="col s3">
+        </div>
+        <div class="col s12 l6 xl6">
+              <div class="card">
+                <div class="card-image">
+                  <img src="images/individual.png">
+                  <span class="card-title">Charles Fr&eacute;dette - President</span>
+                  <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 l3 xl3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/individual.png">
+              <span class="card-title">Noah Serhan - VP</span>
+              <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l3 xl3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/individual.png">
+              <span class="card-title">Philip Becker - VP</span>
+              <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l3 xl3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/individual.png">
+              <span class="card-title">Vacant - Treasurer</span>
+              <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col s12 l3 xl3">
+          <div class="card">
+            <div class="card-image">
+              <img src="images/individual.png">
+              <span class="card-title">Vacant - Secretary</span>
+              <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="images/marianopolis.jpg"></div>
+    </div>
+
+
+    <div id="portfolio" class="section white">
+      <div class="row container">
+        <div class="row">
+        <div class="col s12 l6 xl6">
+        <h2 class="header">Our Portfolio: Current Holdings</h2>
+      </div>
+      <div class="col s12 l6 xl6"></div>
+    </div>
+      <div class="row">
+        <div class="s12 l8 xl8">
+          <p>We currently do not have any holdings.</p>
+        </div>
+        <div class="s12 l4 xl4">
+          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+          <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/marianopolis.jpg"></div>
+  </div>
+
+  <div id="groups"  class="section white">
+    <div class="row container">
+      <div class="row">
+    <div class="col s12 l6 xl6">
+      <h2 class="header">Research Groups: Analysts</h2>
+    </div>
+    <div class="col l6 xl6">
+    </div>
+  </div>
+    <div class="row">
+      <div class="col s12 l6 xl6">
+        <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">attach_money</i>Financials</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">local_gas_station</i>Utilities</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">local_convenience_store</i>Consumer Discretionary & Staples</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">ev_station</i>Energy</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">local_hospital</i>Healthcare</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+      </ul>
+      </div>
+      <div class="col s12 l6 xl6">
+        <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">local_shipping</i>Industrials</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">developer_mode</i>Technology</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">signal_cellular_null</i>Telecom</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">local_florist</i>Materials</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">landscape</i>Real Estate</div>
+          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
+        </li>
+      </ul>
+      </div>
+      <script>
+      $(document).ready(function(){
+        $('.collapsible').collapsible();
+      });
+    </script>
+    </div>
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax"><img src="images/marianopolis.jpg"></div>
+</div>
+
+<div id="join"  class="section white">
+  <div class="row container">
+    <div class="row">
+  <div class="col s6">
+    <h2 class="header">Prospective Members: Join</h2>
+  </div>
+  <div class="col s6">
+  </div>
+</div>
+  <div class="row">
+    <div class="col s12">
+      <div class="row">
+   <form class="col s12" action="https://formspree.io/xbjdpqla" method="POST">
+     <div class="row">
+       <div class="input-field col s6">
+         <input id="last_name" type="text" name="first_name" class="validate">
+         <label for="last_name">First Name</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="last_name" type="text" name="last_name"class="validate">
+         <label for="last_name">Last Name</label>
+       </div>
+     </div>
+     <div class="row">
+       <div class="input-field col s6">
+         <input id="email" type="email" name="email" class="validate">
+         <label for="email">Email</label>
+       </div>
+       <div class="input-field col s6">
+         <input id="student_id" type="number" name="student_id"class="validate">
+         <label for="last_name">Student ID</label>
+       </div>
+     </div>
+     <div class="input-field col s12">
+       <p>Would you like to apply for a leadership role?</p>
+       <p>
+     <label>
+       <input type="checkbox"/ name="secretary">
+       <span>Secretary</span>
+     </label>
+   </p>
+   <p>
+     <label>
+       <input type="checkbox"/ name="treasurer">
+       <span>Treasurer</span>
+     </label>
+   </p>
+   <button type="submit" class="waves-effect waves-light btn">Submit</button>
+
+   </form>
+ </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <script>
+  $(document).ready(function(){
+     $('.modal').modal();
+   })
+  </script>
+  <script>
+  $(document).ready(function(){
+    $('.slider').slider({
+    indicators:true,
+    duration:10000
+    });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+  </script>
+</div>
+</div>
+</body>
+<footer class="page-footer">
+         <div class="container">
+           <div class="row">
+             <div class="col l6 s12">
+               <h5 class="white-text">Marianopolis Investment Club</h5>
+               <p class="grey-text text-lighten-4">A Club for young investors of Marianopolis College.</p>
+               <p class="grey-text text-lighten-4">Founded in 2020.</p>
+             </div>
+             <div class="col l4 offset-l2 s12">
+               <ul>
+                 <li><a class="grey-text text-lighten-3" href="#about">About</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#leadership">Leadership</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#portfolio">Portfolio</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#groups">Research Groups</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#join">Join</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
+         <div class="footer-copyright">
+           <div class="container">
+           © 2020 Vertex Investment Club Inc.
+           <!-- <a class="grey-text text-lighten-4 right" href="#">Privacy Policy</a> -->
+           </div>
+         </div>
+       </footer>
+</html>
