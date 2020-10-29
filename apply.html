@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <title>MariInvests | A Marianopolis Club</title>
+  <meta name="description" content="The Marianopolis Investment Club is Marianopolis' premier destination for young investors. Meetings during AP on Tuesday's."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Marianopolis, Marianopolis Investment Club, MariInvests, Mari Invests, Fredette, Charles Fredette"
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection">
+  <script type="text/javascript" src="scripts/jquery-3.1.1.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans' rel='stylesheet'>
+  <script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	title:{
+		horizontalAlign: "left"
+	},
+	data: [{
+		type: "doughnut",
+		startAngle: 60,
+		//innerRadius: 60,
+		indexLabelFontSize: 17,
+		indexLabel: "{label} - #percent%",
+		toolTipContent: "<b>{label}:</b> {y} (#percent%)",
+		dataPoints: [
+			{ y: 100, label: "Cash" },
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script>
+  $(document).ready(function(){
+$('.slider').slider();
+});
+  </script>
+  <script>
+  UPLOADCARE_PUBLIC_KEY = '0c300f1c713b7dc6fc4a';
+</script>
+<script>
+  UPLOADCARE_LOCALE_TRANSLATIONS = {
+    buttons: {
+      choose: {
+        files: {
+          one: 'Upload Resume'
+        }
+      }
+    }
+  }
+</script>
+<script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+  </script>
+  <script>
+    $(document).ready(function( ){
+      $('.sidenav').sidenav()
+        });
+  </script>
+  <script>
+    $('.button-collapse').sideNav({
+      edge: 'right',
+      closeOnClick: true
+    })
+    </script>
+
+  <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'IBM Plex Sans';
+
+
+  }
+  .nav-extended {
+    background-color: #000000;
+  }
+  .dropdown-button {
+    width : 200px;
+  }
+
+  /* Or use #000000 for darker red matching selection */
+  .dropdown-content {
+    background-color: #000000;
+  }
+
+  .bg {
+    /* The image used */
+    background-image: url("images/top_background.png");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* #header-logo {
+    margin: 15px
+  } */
+  nav {
+    height: 100px;
+    line-height: 50px;
+  }
+  .btn{
+    background-color: #202020
+  }
+  .btn:hover {
+    background-color: #474747
+  }
+  .image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page-footer {
+        background-color: #202020;
+  }
+  .background-color {
+    background-color: #ffffff
+  }
+  .modal
+  {
+    height: 750px !important;
+
+    }  /* increase the height and width as you desire */
+
+  @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff2) format('woff2'),
+       url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.woff) format('woff'),
+       url(https://rawgit.com/google/material-design-icons/master/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  .top_container {
+    width: 100%;
+    background-color: #202020;
+    margin: 0 auto;
+    height: 35px;
+    position: relative;
+  }
+  ul > li > a:hover {
+    border-bottom: 2px solid #202020;
+    text-decoration: none;
+}
+  </style>
+</head>
+<body class="background-color">
+  <div class="bg parallax-container">
+    <nav class="transparent z-depth-0" style="padding:0px 10px;">
+      <div class="nav-wrapper">
+        <div class="nav-extended">
+          <a id="header-logo" class="brand-logo left" style="color:#202020" href="#">MariInvests</a>
+          <ul id="slide-out" class="sidenav">
+              <!-- <li><a href="#about">About</a></li>
+              <li><a href="#leadership">Leadership</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#groups">Research Groups</a></li> -->
+              <li><a href="https://www.martiinvests.com">Back to Main Page</a></li>
+            </ul>
+          <a href="#" data-target="slide-out" class="right sidenav-trigger" style="color:#202020"><i class="material-icons">menu</i></a>
+          <!-- <a href="http://www.vertexinvestmentclub.com"> -->
+
+        <div class="content">
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <!-- <li><a href="#about"><font color="#202020" style="font-size:100%"><b>About</b></font></a></li>
+          <li><a href="#leadership"><font color="#202020" style="font-size:100%"><b>Leadership</b></font></a></li>
+          <li><a href="#portfolio"><font color="#202020" style="font-size:100%"><b>Portfolio</b></font></a></li>
+          <li><a href="#groups"><font color="#202020" style="font-size:100%"><b>Research Groups</b></font></a></li>
+          <li><a href="#resources"><font color="#202020" style="font-size:100%"><b>Resources</b></font></a></li> -->
+          <!-- <li><a href="#join"><font color="#202020" style="font-size:100%"><b>Join</b></font></a></li> -->
+          <li><a href="https://www.mariinvests.com"><font color="#202020" style="font-size:100%"><b>Back to Home Page</b></font></a></li>
+          </ul>
+          <script>
+          $(".dropdown-trigger").dropdown();
+          </script>
+        </div>
+      </div>
+      </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <img class="image-center" src="images/hidden.png" style="display:none">
+  <div class="row">
+    <div class="col s1">
+    </div>
+    <div class="s11">
+      <h1 align="left"><font color="#202020"><b>Executive Application</b></font></h1>
+    </div>
+    <div class="col s1">
+    </div>
+    <div class="s11">
+      <h5 align="left"><font color="#202020">Application deadline: Nov. 8th at 7pm ET</font></h5>
+    </div>
+    <br>
+    <div class="col s1">
+    </div>
+    <div class="s11">
+      <a class="waves-effect waves-light btn modal-trigger" href="#president">President</a> <a class="waves-effect waves-light btn modal-trigger" href="#vp">Vice President</a> <a class="waves-effect waves-light btn modal-trigger" href="#operations">Director of Operations</a> <a class="waves-effect waves-light btn modal-trigger" href="#finance">Director of Finance</a> <a class="waves-effect waves-light btn modal-trigger" href="#communications">Director of Communications</a>
+      <div id="president" class="modal">
+       <div class="modal-content">
+         <h4>Vice President, Finance</h4>
+         <p>Second-Year Position</p>
+         <p><b>DUTIES & TASKS</b></p>
+         <ol>
+           <li>Coordinate and direct the financial planning, budgeting, and investment activities of the Club;</li>
+           <li>Develop internal control policies, guidelines, and procedures for Club activities such as budget administration, cash and credit management, and accounting;</li>
+           <li>Direct preparation of financial statements, business activity reports, financial position forecasts, annual budgets, and/or reports required by Congress;
+</li>
+           <li>Advise the President on short-term and long-term financial objectives, policies, and actions;
+</li>
+           <li>Analyze the financial details of past, present, and expected operations in order to identify development opportunities and areas where improvement is needed;
+</li>
+           <li>Delegate authority for the receipt, disbursement, banking, protection, and custody of funds, securities, and financial instruments;
+</li>
+           <li>Supervise others in performing financial reporting, accounting, billing, collections, and budgeting duties;
+</li>
+           <li>Conduct or coordinate audits of Club accounts and financial transactions to ensure compliance with MSU requirements and statutes;
+</li>
+           <li>Develop and maintain relationships with banking, insurance, and non-organizational accounting personnel in order to facilitate financial activities;
+</li>
+           <li>Monitor and evaluate the performance of accounting and other financial staff; recommend and implement personnel actions such as promotions and dismissals.
+</li>
+           <li>Provide direction and assistance to other organizational units regarding accounting and budgeting policies and procedures, and efficient control and utilization of financial resources;
+</li>
+           <li>Receive and record requests for disbursements; authorize disbursements in accordance with policies and procedures.</li>
+</ol>
+
+<br>
+<form
+   action="https://formspree.io/xbjorban"
+   method="POST"
+   >
+   <label>
+   Your name:
+   <input type="text" name="name">
+   </label>
+   <label>
+   Your email:
+   <input type="email" name="email">
+   </label>
+   <label>
+   Student ID
+   <input type="number" name="student_id">
+   </label>
+   <label>
+     <input type="radio"checked name="vpfinance">
+     <span>Director of Finance</span>
+   </label>
+   <!-- your other form fields go here -->
+        <span class="uploader-button">
+          <input
+            type="hidden"
+            role="uploadcare-uploader"
+            data-tabs="file gdrive" />
+        </span>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+        <br>
+        <br>
+       </div>
+       </div>
+
+
+
+
+
+
+
+
+      <div id="vpfinance" class="modal">
+       <div class="modal-content">
+         <h4>Vice President, Finance</h4>
+         <p>Second-Year Position</p>
+         <p><b>DUTIES & TASKS</b></p>
+         <ol>
+           <li>Coordinate and direct the financial planning, budgeting, and investment activities of the Club;</li>
+           <li>Develop internal control policies, guidelines, and procedures for Club activities such as budget administration, cash and credit management, and accounting;</li>
+           <li>Direct preparation of financial statements, business activity reports, financial position forecasts, annual budgets, and/or reports required by Congress;
+</li>
+           <li>Advise the President on short-term and long-term financial objectives, policies, and actions;
+</li>
+           <li>Analyze the financial details of past, present, and expected operations in order to identify development opportunities and areas where improvement is needed;
+</li>
+           <li>Delegate authority for the receipt, disbursement, banking, protection, and custody of funds, securities, and financial instruments;
+</li>
+           <li>Supervise others in performing financial reporting, accounting, billing, collections, and budgeting duties;
+</li>
+           <li>Conduct or coordinate audits of Club accounts and financial transactions to ensure compliance with MSU requirements and statutes;
+</li>
+           <li>Develop and maintain relationships with banking, insurance, and non-organizational accounting personnel in order to facilitate financial activities;
+</li>
+           <li>Monitor and evaluate the performance of accounting and other financial staff; recommend and implement personnel actions such as promotions and dismissals.
+</li>
+           <li>Provide direction and assistance to other organizational units regarding accounting and budgeting policies and procedures, and efficient control and utilization of financial resources;
+</li>
+           <li>Receive and record requests for disbursements; authorize disbursements in accordance with policies and procedures.</li>
+</ol>
+
+<br>
+<form
+   action="https://formspree.io/xbjorban"
+   method="POST"
+   >
+   <label>
+   Your name:
+   <input type="text" name="name">
+   </label>
+   <label>
+   Your email:
+   <input type="email" name="email">
+   </label>
+   <label>
+   Student ID
+   <input type="number" name="student_id">
+   </label>
+   <label>
+     <input type="radio"checked name="vpfinance">
+     <span>Director of Finance</span>
+   </label>
+   <!-- your other form fields go here -->
+        <span class="uploader-button">
+          <input
+            type="hidden"
+            role="uploadcare-uploader"
+            data-tabs="file gdrive" />
+        </span>
+        <br>
+        <br>
+        <button type="submit">Submit</button>
+      </form>
+        <br>
+        <br>
+       </div>
+       </div>
+
+       <div id="firstyear" class="modal">
+        <div class="modal-content">
+          <h4>First-Year Executive</h4>
+          <p>First-Year Position (x2)</p>
+          <p><b>DUTIES & TASKS</b></p>
+          <ol>
+            <li>Will be solely considered for the President and Vice President positions for the 2021-2022 academic year;</li>
+            <li>Shadow the current executives in organizing events, managing finances and other tasks;</li>
+            <li>Serve as a liaison between first-year students and the Club.</li>
+ </ol>
+
+ <br>
+ <form
+    action="https://formspree.io/xbjorban"
+    method="POST"
+    >
+    <label>
+    Your name:
+    <input type="text" name="name">
+    </label>
+    <label>
+    Your email:
+    <input type="email" name="email">
+    </label>
+    <label>
+    Student ID
+    <input type="number" name="student_id">
+    </label>
+    <label>
+      <input type="radio"checked name="vpcomm">
+      <span>VP Communications</span>
+    </label>
+    <!-- your other form fields go here -->
+         <span class="uploader-button">
+           <input
+             type="hidden"
+             role="uploadcare-uploader"
+             data-tabs="file gdrive" />
+         </span>
+         <br>
+         <br>
+         <button type="submit">Submit</button>
+       </form>
+         <br>
+         <br>
+        </div>
+        </div>
+
+       <div id="treasurer" class="modal">
+        <div class="modal-content">
+          <h4>Treasurer</h4>
+          <p>First-Year Position</p>
+          <p><b>DUTIES & TASKS</b></p>
+          <ol>
+            <li>Work on financial planning, budgeting, and investment activities of the Club;</li>
+            <li>Preparation of financial statements, business activity reports, financial position forecasts, annual budgets, and/or reports required by Congress;
+ </li>
+            <li>Analyze the financial details of past, present, and expected operations in order to identify development opportunities and areas where improvement is needed;
+ </li>
+            <li>Perform financial reporting, accounting, billing, collections, and budgeting duties;
+ </li>
+            <li>Conduct or coordinate audits of Club accounts and financial transactions to ensure compliance with MSU requirements and statutes;
+ </li>
+            <li>Develop and maintain relationships with banking, insurance, and non-organizational accounting personnel in order to facilitate financial activities;
+ </li>
+            <li>Receive and record requests for disbursements; authorize disbursements in accordance with policies and procedures.
+ </li>
+ </ol>
+
+ <br>
+ <form
+    action="https://formspree.io/xbjorban"
+    method="POST"
+    >
+    <label>
+    Your name:
+    <input type="text" name="name">
+    </label>
+    <label>
+    Your email:
+    <input type="email" name="email">
+    </label>
+    <label>
+    Student ID
+    <input type="number" name="student_id">
+    </label>
+    <label>
+      <input type="radio"checked name="treasurer">
+      <span>Treasurer</span>
+    </label>
+    <!-- your other form fields go here -->
+         <span class="uploader-button">
+           <input
+             type="hidden"
+             role="uploadcare-uploader"
+             data-tabs="file gdrive" />
+         </span>
+         <br>
+         <br>
+         <button type="submit">Submit</button>
+       </form>
+         <br>
+         <br>
+        </div>
+        </div>
+
+        <div id="secretary" class="modal">
+         <div class="modal-content">
+           <h4>Secretary</h4>
+           <p>First-Year Position</p>
+           <p><b>DUTIES & TASKS</b></p>
+           <ol>
+             <li>Prepare the agenda for club/group meetings in consultation with the Chairperson;</li>
+             <li>Make arrangements including venue, date, times and hospitality for club meetings;</li>
+             <li>Send adequate notice of the meetings;</li>
+             <li>Collect and collate reports from office bearers;</li>
+             <li>Call for and receive nominations for committees and other positions for the club AGM;</li>
+             <li>Take the minutes of meetings;</li>
+             <li>Write up the minutes as soon as possible after the meeting;</li>
+             <li>Read, reply and file correspondence promptly;</li>
+             <li>Collate and arrange for the printing of the annual report;</li>
+             <li>Maintain registers of members’ names and addresses, life members and sponsors;</li>
+             <li>Maintain files of legal documents such as constitutions, leases and titles;</li>
+             <li>Act as the public officer of your club/group liaising with members of the public, affiliated bodies and Marianopolis faculty.</li>
+  </ol>
+
+  <br>
+  <form
+     action="https://formspree.io/xbjorban"
+     method="POST"
+     >
+     <label>
+     Your name:
+     <input type="text" name="name">
+     </label>
+     <label>
+     Your email:
+     <input type="email" name="email">
+     </label>
+     <label>
+     Student ID
+     <input type="number" name="student_id">
+     </label>
+     <label>
+       <input type="radio"checked name="secretary">
+       <span>Secretary</span>
+     </label>
+     <!-- your other form fields go here -->
+          <span class="uploader-button">
+            <input
+              type="hidden"
+              role="uploadcare-uploader"
+              data-tabs="file gdrive" />
+          </span>
+          <br>
+          <br>
+          <button type="submit">Submit</button>
+        </form>
+          <br>
+          <br>
+         </div>
+         </div>
+
+    </div>
+</div>
+</div>
+  <script>
+  $(document).ready(function(){
+     $('.modal').modal();
+   })
+  </script>
+  <script>
+  $(document).ready(function(){
+    $('.slider').slider({
+    indicators:true,
+    duration:10000
+    });
+    });
+    </script>
+    <script>
+    $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+  </script>
+</div>
+</div>
+</body>
+</html>

@@ -3,9 +3,10 @@
 <head>
   <link rel="icon" type="image/png" href="images/favicon.ico">
   <meta charset="utf-8">
-  <title>MariInvests | A Marianopolis Club</title>
-  <meta name="description" content="The Marianopolis Investment Club is Marianopolis' premier destination for young investors. Meetings during AP on Tuesday's."/>
+  <title>Marianopolis Investment Club - Learning to Earn</title>
+  <meta name="description" content="The Marianopolis Investment Club is Marianopolis' premier destination for young investors. Meetings during AP on Thursdays."/>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="Marianopolis, Marianopolis Investment Club, MariInvests, Mari Invests, Fredette, Charles Fredette"
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection">
   <script type="text/javascript" src="scripts/jquery-3.1.1.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -29,7 +30,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		indexLabel: "{label} - #percent%",
 		toolTipContent: "<b>{label}:</b> {y} (#percent%)",
 		dataPoints: [
-			{ y: 100, label: "Cash" },
+			{ y: 2641.26, label: "Cash" },
 		]
 	}]
 });
@@ -198,6 +199,17 @@ $('.slider').slider();
     border-bottom: 2px solid #202020;
     text-decoration: none;
 }
+p
+{
+  margin:0;
+  padding:0;
+}
+p-1
+{
+  margin:0;
+  padding:0;
+  font-size:20px;
+}
   </style>
 </head>
 <body class="background-color">
@@ -205,15 +217,12 @@ $('.slider').slider();
     <nav class="transparent z-depth-0" style="padding:0px 10px;">
       <div class="nav-wrapper">
         <div class="nav-extended">
-          <a id="header-logo" class="brand-logo left" style="color:#202020" href="index">MariInvests</a>
+          <a id="header-logo" class="brand-logo left" style="color:#202020" href="#">MariInvests</a>
           <ul id="slide-out" class="sidenav">
               <li><a href="#about">About</a></li>
               <li><a href="#leadership">Leadership</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li><a href="#groups">Research Groups</a></li>
               <li><a href="#join">Join</a></li>
-
-
+              <li><a href="apply">Executive Application</a></li>
             </ul>
           <a href="#" data-target="slide-out" class="right sidenav-trigger" style="color:#202020"><i class="material-icons">menu</i></a>
           <!-- <a href="http://www.vertexinvestmentclub.com"> -->
@@ -222,10 +231,8 @@ $('.slider').slider();
           <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li><a href="#about"><font color="#202020" style="font-size:100%"><b>About</b></font></a></li>
           <li><a href="#leadership"><font color="#202020" style="font-size:100%"><b>Leadership</b></font></a></li>
-          <li><a href="#portfolio"><font color="#202020" style="font-size:100%"><b>Portfolio</b></font></a></li>
-          <li><a href="#groups"><font color="#202020" style="font-size:100%"><b>Research Groups</b></font></a></li>
-          <!-- <li><a href="#resources"><font color="#202020" style="font-size:100%"><b>Resources</b></font></a></li> -->
           <li><a href="#join"><font color="#202020" style="font-size:100%"><b>Join</b></font></a></li>
+          <li><a href="apply"><font color="#202020" style="font-size:100%"><b>Executive Application</b></font></a></li>
           </ul>
           <script>
           $(".dropdown-trigger").dropdown();
@@ -241,10 +248,12 @@ $('.slider').slider();
       <li><a href="#groups">Research Groups</a></li>
       <!-- <li><a href="resources">Resources</a></li> -->
       <li><a href="#join">Join</a></li>
+      <!-- <li><a href="apply">Executive Application</a></li> -->
     </ul>
   <br>
   <br>
   <br>
+  <img class="image-center" src="images/hidden.png" style="display:none">
   <div class="row">
     <div class="col s1">
     </div>
@@ -260,7 +269,7 @@ $('.slider').slider();
     <div class="col s1">
     </div>
     <div class="s11">
-      <a class="waves-effect waves-light btn" href="#join">Join The Club</a>
+      <a class="waves-effect waves-light btn" href="apply">Executive Applications</a>
     </div>
 </div>
 </div>
@@ -272,9 +281,9 @@ $('.slider').slider();
   <div class="col s12 l6 xl6">
   </div>
   <div class="col s12">
-    <p class="grey-text text-darken-3 lighten-3" align="justify">The Club was founded by Philip Becker, Charles Fr&eacute;dette and Noah Serhan in early 2020. Since then, the Club plans to meet once a week, during Activity Period at Marianopolis, to discuss investment opportunities, learn different investment strategies with lessons, seminars and conferences from industry professionals, as well as creating networking with business professionals.</p>
+    <p class="grey-text text-darken-3 lighten-3" align="justify">The Club was founded by Philip Becker and Charles Fr&eacute;dette in early 2020. This semester, the Club plans to hold activities online throughout the semester, during Activity Period, to discuss investment opportunities, learn different investment strategies with lessons, seminars and conferences from industry professionals, as well as creating networking with business professionals.</p>
+    <br>
   </div>
-  <br>
   <div class="col s12 l4 xl4">
     <img class="image-center" height="100px" src="images/passive.png">
     <h5 align="center">Profitable Opportunities</font></h5>
@@ -282,7 +291,7 @@ $('.slider').slider();
   </div>
   <div class="col s12 l4 xl4">
     <img class="image-center" height="100px" src="images/community.png">
-    <h5 align="center">Investing as a Group</font></h5>
+    <h5 align="center">Learning as a Group</font></h5>
     <p align="center">Learning how to invest as a group to help develop key skills such as communication and critical thinking useful in both academic and career related activities.</font></p>
   </div>
   <div class="col s12 l4 xl4">
@@ -305,157 +314,45 @@ $('.slider').slider();
       </div>
       </div>
       <div class="row">
-        <div class="col s3">
+        <div class="col s12 m4 l4 xl4">
+          <img src="images/profile.png" width="100%"/>
+          <p-1>Charles Fr&eacute;dette</p-1>
+          <p>Founder & President</p>
         </div>
-        <div class="col s12 l6 xl6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="images/individual.png">
-                  <span class="card-title">Charles Fr&eacute;dette - President</span>
-                  <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
-                </div>
-              </div>
+        <div class="col s12 m4 l4 xl4">
+          <img src="images/profile.png" width="100%"/>
+          <p-1>Noah Serhan</p-1>
+          <p>Vice President</p>
+        </div>
+        <div class="col s12 m4 l4 xl4">
+          <img src="images/profile.png" width="100%"/>
+          <p-1>Philip Becker</p-1>
+          <p>Director of Operations</p>
         </div>
       </div>
       <div class="row">
-        <div class="col s12 l3 xl3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/individual.png">
-              <span class="card-title">Noah Serhan - VP</span>
-              <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
-            </div>
-          </div>
+        <div class="col m2 l2 xl2"></div>
+        <div class="col s12 m4 l4 xl4">
+          <img src="images/profile.png" width="100%"/>
+          <p-1><b>Sabrina Di Sciullo</b></p-1>
+          <p>Director of Finance</p>
         </div>
-        <div class="col s12 l3 xl3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/individual.png">
-              <span class="card-title">Philip Becker - VP</span>
-              <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
-            </div>
-          </div>
+        <div class="col s12 m4 l4 xl4">
+          <img src="images/profile.png" width="100%"/>
+          <p-1>Efstratia Rodousakis</p-1>
+          <p>Director of Communications</p>
         </div>
-        <div class="col s12 l3 xl3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/individual.png">
-              <span class="card-title">Vacant - Treasurer</span>
-              <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
-            </div>
-          </div>
-        </div>
-        <div class="col s12 l3 xl3">
-          <div class="card">
-            <div class="card-image">
-              <img src="images/individual.png">
-              <span class="card-title">Vacant - Secretary</span>
-              <!-- <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">info</i></a> -->
-            </div>
-          </div>
-        </div>
+        <div class="col m2 l2 xl2"></div>
+
       </div>
+
+
+
       </div>
     </div>
-
     <div class="parallax-container">
       <div class="parallax"><img src="images/marianopolis.jpg"></div>
     </div>
-
-
-    <div id="portfolio" class="section white">
-      <div class="row container">
-        <div class="row">
-        <div class="col s12 l6 xl6">
-        <h2 class="header">Our Portfolio: Current Holdings</h2>
-      </div>
-      <div class="col s12 l6 xl6"></div>
-    </div>
-      <div class="row">
-        <div class="s12 l8 xl8">
-          <p>We currently do not have any holdings.</p>
-        </div>
-        <div class="s12 l4 xl4">
-          <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-          <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="images/marianopolis.jpg"></div>
-  </div>
-
-  <div id="groups"  class="section white">
-    <div class="row container">
-      <div class="row">
-    <div class="col s12 l6 xl6">
-      <h2 class="header">Research Groups: Analysts</h2>
-    </div>
-    <div class="col l6 xl6">
-    </div>
-  </div>
-    <div class="row">
-      <div class="col s12 l6 xl6">
-        <ul class="collapsible">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">attach_money</i>Financials</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">local_gas_station</i>Utilities</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">local_convenience_store</i>Consumer Discretionary & Staples</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">ev_station</i>Energy</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">local_hospital</i>Healthcare</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-      </ul>
-      </div>
-      <div class="col s12 l6 xl6">
-        <ul class="collapsible">
-        <li>
-          <div class="collapsible-header"><i class="material-icons">local_shipping</i>Industrials</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">developer_mode</i>Technology</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">signal_cellular_null</i>Telecom</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">local_florist</i>Materials</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">landscape</i>Real Estate</div>
-          <div class="collapsible-body"><span>Head Analyst: TBD</span></div>
-        </li>
-      </ul>
-      </div>
-      <script>
-      $(document).ready(function(){
-        $('.collapsible').collapsible();
-      });
-    </script>
-    </div>
-  </div>
-</div>
-
-<div class="parallax-container">
-  <div class="parallax"><img src="images/marianopolis.jpg"></div>
-</div>
 
 <div id="join"  class="section white">
   <div class="row container">
@@ -490,24 +387,7 @@ $('.slider').slider();
          <label for="last_name">Student ID</label>
        </div>
      </div>
-     <div class="input-field col s12">
-       <p>Would you like to apply for a leadership role?</p>
-       <p>
-     <label>
-       <input type="checkbox"/ name="secretary">
-       <span>Secretary</span>
-     </label>
-   </p>
-   <p>
-     <label>
-       <input type="checkbox"/ name="treasurer">
-       <span>Treasurer</span>
-     </label>
-   </p>
-   <button type="submit" class="waves-effect waves-light btn">Submit</button>
-
-   </form>
- </div>
+     <button type="submit">Submit</button>
     </div>
   </div>
 </div>
@@ -549,14 +429,15 @@ $('.slider').slider();
                  <li><a class="grey-text text-lighten-3" href="#portfolio">Portfolio</a></li>
                  <li><a class="grey-text text-lighten-3" href="#groups">Research Groups</a></li>
                  <li><a class="grey-text text-lighten-3" href="#join">Join</a></li>
+                 <!-- <li><a class="grey-text text-lighten-3" href="apply">Executive Application</a></li> -->
                </ul>
              </div>
            </div>
          </div>
          <div class="footer-copyright">
            <div class="container">
-           © 2020 Vertex Investment Club Inc.
-           <!-- <a class="grey-text text-lighten-4 right" href="#">Privacy Policy</a> -->
+           © 2020 Vertex Financial Group Inc.
+           <a class="grey-text text-lighten-4 right" href="terms">Terms & Conditions</a>
            </div>
          </div>
        </footer>
